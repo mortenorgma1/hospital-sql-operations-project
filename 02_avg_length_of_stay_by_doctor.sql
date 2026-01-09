@@ -1,0 +1,16 @@
+/*
+Calculates average length of stay per doctor.
+Length of stay is measured as discharge_date - admission_date.
+*/
+SELECT
+	D.DOCTOR_ID,
+	CONCAT(D.FIRST_NAME, ' ', D.LAST_NAME) AS DOCTOR_NAME,
+	ROUND(AVG(A.DISCHARGE_DATE - A.ADMISSION_DATE), 2) AS AVERAGE_LENGTH_OF_STAY
+FROM
+	DOCTORS D
+	JOIN ADMISSIONS A ON D.DOCTOR_ID = A.DOCTOR_ID
+GROUP BY
+	D.DOCTOR_ID,
+	DOCTOR_NAME
+ORDER BY
+	AVERAGE_LENGTH_OF_STAY DESC
