@@ -1,0 +1,18 @@
+/*
+Calculates the average total treatment cost per admission.
+High-level financial KPI.
+*/
+WITH
+	ADMISSION_COSTS AS (
+		SELECT
+			ADMISSION_ID,
+			SUM(TREATMENT_COST) AS ADMISSION_COST
+		FROM
+			TREATMENTS
+		GROUP BY
+			ADMISSION_ID
+	)
+SELECT
+	ROUND(AVG(ADMISSION_COST), 2) AS AVG_COST_PER_ADMISSION
+FROM
+	ADMISSION_COSTS
