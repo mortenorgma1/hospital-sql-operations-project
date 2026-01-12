@@ -1,6 +1,6 @@
-# 🏥 Hospital Operations & Performance Analysis (SQL)
+# Hospital Operations & Performance Analysis (SQL)
 
-## 📌 Project Overview
+## Project Overview
 This project analyzes **hospital operational efficiency and costs** using PostgreSQL.  
 The focus is on understanding **doctor workload**, **department performance**, **length of stay**, and **treatment costs** through structured SQL analysis.
 
@@ -10,7 +10,7 @@ All data used in this project is **synthetic** and generated for learning and de
 
 ---
 
-## 🧰 Tech Stack
+## Tech Stack
 - **Database:** PostgreSQL  
 - **SQL Concepts:**  
   - JOINs  
@@ -22,7 +22,7 @@ All data used in this project is **synthetic** and generated for learning and de
 
 ---
 
-## 🗂 Database Schema
+## Database Schema
 The database consists of five normalized tables:
 
 - **patients** — patient demographic data  
@@ -40,7 +40,7 @@ Foreign keys are used to enforce **referential integrity**.
 
 ---
 
-## 📊 Key Analyses
+## Key Analyses
 
 ### Doctor & Department Performance
 - Doctor workload ranking by number of admissions
@@ -60,7 +60,7 @@ Foreign keys are used to enforce **referential integrity**.
 
 ---
 
-## 🧠 SQL-First Approach
+## SQL-First Approach
 All analytical logic is written in SQL and stored in the `/sql` directory.
 
 Key principles followed:
@@ -71,7 +71,7 @@ Key principles followed:
 
 ---
 
-## 📂 Repository Structure
+## Repository Structure
 
 hospital-operations-sql/
 ├── README.md
@@ -92,7 +92,7 @@ hospital-operations-sql/
 
 ---
 
-## 🚀 Key Takeaways
+## Key Takeaways
 - Demonstrates practical SQL skills applied to operational analytics
 - Shows understanding of data modeling and relational design
 - Focuses on meaningful business questions, not just query syntax
@@ -100,7 +100,7 @@ hospital-operations-sql/
 
 ---
 
-## ▶️ How to Run
+## How to Run
 1. Create a PostgreSQL database  
 2. Execute `schema.sql`  
 3. Run `insert_data.sql` to generate data  
@@ -108,11 +108,12 @@ hospital-operations-sql/
 
 ---
 
-## 📬 Notes
+## Notes
 This project uses **synthetic data** and does not contain any real patient information.
 
 ---
 
 ### 🧠 Interview One-Liner
 > “This project analyzes hospital operations using PostgreSQL, focusing on efficiency, cost, and workload through SQL-first analytics.”
+
 
